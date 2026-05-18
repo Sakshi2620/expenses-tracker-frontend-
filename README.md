@@ -1,35 +1,37 @@
-# 💸 Expense Tracker Backend (SplitSmart API)
+# 💸 SplitSmart Frontend (Expense Tracker UI)
 
-A Django REST Framework backend for a Splitwise-style expense sharing application.  
-It manages users, groups, expenses, and shared balances.
+A modern React-based frontend for a Splitwise-style expense sharing application.  
+Users can log in, add members, create expenses, and view shared balances in real time.
 
 ---
 
 ## 🚀 Features
 
-- User management (create / fetch users)
-- Group creation and membership
-- Expense tracking
-- Paid-by and split calculation support
-- REST API built using Django REST Framework
-- SQLite database (default setup)
+- 🔐 Simple login (name + email)
+- 👥 Add and manage group members
+- 💰 Add expenses with payer selection
+- 📊 Automatic equal split calculation
+- ✏️ Edit & update previous expenses
+- 🗑️ Delete expenses
+- ⚡ Real-time UI updates
+- 🎨 Modern dark-themed UI
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python 3.x
-- Django
-- Django REST Framework
-- SQLite (default DB)
+- React (Vite / CRA)
+- JavaScript (ES6+)
+- Axios (API calls)
+- Lucide React (icons)
+- Inline CSS styling
 
 ---
 
 ## 📁 Project Structure
-expense_tracker/
+src/
 │
-├── expense_tracker/ # Main project settings
-├── expenses/ # App (models, views, serializers)
-├── db.sqlite3 # Database
-├── manage.py
-└── venv/ # Virtual environment (DO NOT PUSH)
+├── api.js # Axios API configuration
+├── App.js # Main SplitSmart component
+├── index.js # React entry point
+└── styles (inline) # UI styling inside component
