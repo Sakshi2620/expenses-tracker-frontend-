@@ -1,18 +1,35 @@
-# React + Vite
+# 💸 Expense Tracker Backend (SplitSmart API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Django REST Framework backend for a Splitwise-style expense sharing application.  
+It manages users, groups, expenses, and shared balances.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- User management (create / fetch users)
+- Group creation and membership
+- Expense tracking
+- Paid-by and split calculation support
+- REST API built using Django REST Framework
+- SQLite database (default setup)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- Python 3.x
+- Django
+- Django REST Framework
+- SQLite (default DB)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+expense_tracker/
+│
+├── expense_tracker/ # Main project settings
+├── expenses/ # App (models, views, serializers)
+├── db.sqlite3 # Database
+├── manage.py
+└── venv/ # Virtual environment (DO NOT PUSH)
